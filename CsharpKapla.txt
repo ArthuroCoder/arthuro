@@ -1,0 +1,48 @@
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class HelloLoopMono : MonoBehaviour
+{
+
+    public string m_text = "Hello World";
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        // Afficher les nombres de 0 à 9
+        for (int i = 0; i < 10; i++)
+        {
+            Debug.Log(i);
+        }
+
+        // Afficher les nombres de 0 à 9
+        int j = 0;
+        while (j < 10)
+        {
+            Debug.Log(j);
+            j++;
+        }
+
+        // Afficher les nombres de 0 à 9
+        int k = 0;
+        do
+        {
+            Debug.Log(k);
+            k++;
+        } while (k < 10);
+
+        foreach (char c in m_text)
+        {
+            Debug.Log(c);
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
+
